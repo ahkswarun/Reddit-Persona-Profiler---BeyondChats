@@ -1,0 +1,15 @@
+Set Up Environment:
+
+Python and some libraries:
+praw (Python Reddit API Wrapper)
+google-generativeai
+
+Reddit API Key:
+Go to Reddit Apps.
+Click "create another app" at the bottom.
+Fill in the name, select script, and set redirect URI to http://localhost:8080.
+Copy your client_id and client_secret.
+
+Google Gemini API Key
+Go to Google AI Studio.
+Create and copy your Gemini API key.
