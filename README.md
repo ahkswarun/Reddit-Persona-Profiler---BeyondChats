@@ -88,7 +88,3 @@ Open the `.txt` file to view the generated persona, including citations to the u
 ## **License**
 
 MIT License
-
----
-
-Let me know if you want to add more details or have a specific filename for your main script!
