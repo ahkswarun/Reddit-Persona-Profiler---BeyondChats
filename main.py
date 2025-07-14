@@ -58,13 +58,9 @@ def build_persona(posts, comments):
     for comment in comments:
         all_text += f"Comment: {comment['body']} (Link: {comment['permalink']})\n"
     
-    prompt = f"""
-Analyze the following Reddit user's posts and comments and create a detailed user persona.
-For each characteristic (age, location, interests, etc.), cite the specific post or comment (with permalink) that supports your inference.
-
-User Content:
-{all_text}
-"""
+    prompt = f"""Analyze the following Reddit user's posts and comments and create a detailed user persona.
+    For each characteristic (age, location, interests, etc.), cite the specific post or comment (with permalink) that supports your inference.
+    User Content: {all_text}"""
     try:
         response = model.generate_content(prompt)
         return response.text
